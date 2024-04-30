@@ -146,13 +146,13 @@ export default function AppDetails({app, client_id}) {
             <div className={styles.content}>
                 {app.commands.map((command) => (
                     command.type === "text" ? 
-                    (<div className={styles.item}>
+                    (<div key={"_"+command.id} className={styles.item}>
                         <p className={styles.desc}>
                             {command.desc}
                         </p>
                         <PromptForm data={app} command = {command} client_id={client_id} workflow={workflow} setWorkflow={setWorkflow} setPromptId={setPromptId}/>
                     </div>) :
-                    (<div className={styles.item}>
+                    (<div key={"_"+command.id}  className={styles.item}>
                         <p className={styles.desc}>
                             {command.desc}
                         </p>
