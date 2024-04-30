@@ -58,7 +58,7 @@ const Login = ({ url }) => {
         <button className={styles.button}>Login</button>
         {error && error}
       </form>
-      <button
+      {/* <button
         onClick={() => {
           signIn("google");
         }}
@@ -73,7 +73,7 @@ const Login = ({ url }) => {
         className={styles.button + " " + styles.github}
       >
         Login with Github
-      </button>
+      </button> */}
       <span className={styles.or}>- OR -</span>
       <Link className={styles.link} href="/dashboard/register">
         Create new account

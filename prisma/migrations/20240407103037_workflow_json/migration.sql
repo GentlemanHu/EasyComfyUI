@@ -5,4 +5,4 @@
 
 */
 -- AlterTable
-ALTER TABLE `app` MODIFY `workflow` JSON NOT NULL;
+ALTER TABLE `App` MODIFY `workflow` JSON NOT NULL;
